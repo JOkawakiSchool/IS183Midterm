@@ -1,9 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>IS183 Midterm</title>
-</head>
-<body>
-    <!-- html comment -->
-</body>
+    <head>
+        <title>Assignment 4</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body, html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main-container-grid {
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                row-gap: 1em;
+            }
+            .r1, .r3 {
+                display: grid;
+                background-color: #CCC;
+                padding: 1em;
+                align-items: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #f1f1f1;
+            }
+            .r3 {
+                text-align: center;
+                align-items: center;
+            }
+            .three-column {
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #fff;
+                grid-column-gap: 1em;
+            }
+            .c1, .c3 {
+                background-color: #ccc;
+            }
+            .c1 {
+                min-width: 200px;
+            }
+            .c2 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                /* grid-template-rows: 1fr 1fr 1fr; */
+                grid-auto-rows: min-content;
+            }
+            .c2 > img {
+                width: 100%;
+                /* height: auto; */
+                background-size: cover;
+                object-fit: cover;
+                align-self: center;
+                max-height: 130px;
+            }
+            .txt-center {
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #a8a7a7;
+                padding-bottom: 15px;
+            }
+            .left-nav {
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #ccc;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+            }
+            .left-nav > li > a:hover {
+                background-color: #8c8c8c;
+            }
+            .h2-content {
+                grid-column: 1 / 5;
+                height: 22px;
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body class="main-container-grid">
+        <div class="r1">
+            <h2>Jeff Okawaki</h2>
+        </div>
+        <div class="r2 three-column">
+            <div class="c1">
+                <h2 class="txt-center">Navigation</h2>
+                <ul class="left-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact-us.html">Contact</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./login.html">Login</a></li>
+               </ul>
+            </div>
+            <div class="c2">
+                <!-- <h2 class="txt-center h2-content">Recent product</h2> -->
+                <img src="./img/1.jpg">
+                <img src="./img/2.png">
+                <img src="./img/3.jpg">
+                <img src="./img/4.jpg">
+                <img src="./img/5.jpeg">
+                <img src="./img/6.jpg">
+                <img src="./img/7.jpg">
+                <img src="./img/8.jpg">
+                <img src="./img/9.jpg">
+                <img src="./img/10.jpg">
+                <img src="./img/11.jpg">
+                <img src="./img/12.jpg">
+            </div>
+            <div class="c3">
+                <h2 class="txt-center">Recent product</h2>
+            </div>
+        </div>
+        <div class="r3">
+            Copyright 2021 - Created by Jeff Okawaki
+        </div>
+    </body>
 </html>

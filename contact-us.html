@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body, html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main-container-grid {
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                row-gap: 1em;
+            }
+            .r1, .r3 {
+                display: grid;
+                background-color: #9bc1bC;
+                padding: 1em;
+                align-items: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #f4f1bb;
+            }
+            .r3 {
+                text-align: center;
+                align-items: center;
+                color: #F4F1BB;
+            }
+            .one-column {
+                display: grid;
+                background-color: #fff;
+                grid-column-gap: 1em;
+            }
+            .c1, .c3 {
+                background-color: #ccc;
+            }
+            .c1 {
+                min-width: 200px;
+            }
+            .c2 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                /* grid-template-rows: 1fr 1fr 1fr; */
+                grid-auto-rows: min-content;
+            }
+            .c2 > img {
+                width: 100%;
+                /* height: auto; */
+                background-size: cover;
+                object-fit: cover;
+                align-self: center;
+                max-height: 130px;
+            }
+            .txt-center {
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #E6EBE0;
+                padding-bottom: 15px;
+            }
+            .left-nav {
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #ccc;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+            }
+            .left-nav > li > a:hover {
+                background-color: #8c8c8c;
+            }
+            .h2-content {
+                grid-column: 1 / 5;
+                height: 22px;
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+            .contact-form {
+                align-content: center;
+                width: 500px;
+                height: 500px;
+                margin: 100px auto;
+            }
+            .contact-input {
+                width: 91%;
+                padding: 15px;
+                margin: 5px;
+            }
+            .error-message {
+                color: red;
+                display:block;
+                margin-top: 5px;
+                padding: 7px;
+                display:none;
+            }
+        </style>
+    </head>
+    <body class="main-container-grid">
+        <div class="r1">
+            <img src="./img/sm_logo.jpg">
+        </div>
+        <div class="r2 one-column">
+            <div class="c2">
+                <form class="contact-form">
+                    <input placeholder="First Name" type="text" id="first-name" class="contact-input">
+                    <input placeholder="Last Name" type="text" id="last-name" class="contact-input">
+                    <input placeholder="Email" type="text" id="email" class="contact-input">
+                    <button onclick="contact.goToHome()" class="submit-button" type="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="r3">
+            For educational purpose only! No orders shall be fulfilled
+        </div>
+        <script type="text/javascript" src="./js/contact.js"></script>
+    </body>
+</html>

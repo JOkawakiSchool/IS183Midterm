@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body, html {
+                width: 100vw;
+                height: 100vh;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main-container-grid {
+                display: grid;
+                grid-template-rows: 1fr 13fr;
+                height: 100%;
+                row-gap: 10px;
+            }
+            .r1, .r3 {
+                display: grid;
+                background-color: #9BC1BC;
+                padding: 1em;
+                align-items: center;
+            }
+            .r2 {
+                height: 100%;
+                background-color: #9BC1BC;
+                display:grid;
+            }
+            .r3 {
+                text-align: center;
+                align-items: center;
+                color: #F4F1BB;
+                width:100%;
+            }
+            .three-column {
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                background-color: #F4F1BB;
+                grid-column-gap: 1em;
+            }
+            .c1, .c3 {
+                background-color: #9BC1BC;
+            }
+            .c1 {
+                min-width: 200px;
+            }
+            .txt-center {
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #E6EBE0;
+                padding-bottom: 15px;
+            }
+            .left-nav {
+                list-style-type: none;
+            }
+            .left-nav > li > a {
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #9BC1BC;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.7s;
+                color: #F4F1BB;
+            }
+            .left-nav > li > a:hover {
+                background-color: #9BC1BC;
+            }
+            .top-row {
+                background-color: #cfe2f3;
+                font-weight: bold;
+                align-items: center;
+            }
+            .table-row {
+                background-color: #efefef;
+                align-items: center;
+            }
+            .gallery-table {
+                display:table;
+                width: 80%;
+                text-align: center;
+            }
+            .gallery-table thead {
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #CCC;
+                align-items: center;
+            }
+            .gallery-table td{
+                border: 1px solid;
+                align-items: center;
+            }
+            .gallery-table > tbody > tr >td >img {
+                max-width: 150px;
+            }
+            .buy-now {
+                padding: 7px 16px;
+                background-color: green;
+                /* float: fight; */
+                border-radius: 6px;
+                color: #FFF;
+                font-size: 16px;
+                transition-duration: 0.5s;
+            }
+        </style>
+    </head>
+    <body class="main-container-grid">
+        <div class="r1">
+            <h2><img src="./img/sm_logo.jpg"></h2>
+        </div>
+        <div class="r2 three-column">
+            <div class="c1">
+                <h2 class="txt-center">Navigation</h2>
+                <ul class="left-nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact-us.html">Contact</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./login.html">Login</a></li>
+               </ul>
+            </div>
+            <div>
+                <table class="gallery-table">
+                    <thead class="top-row">
+                        <tr>
+                            <td>
+                                Image
+                            </td>
+                            <td>
+                                Product ID
+                            </td>
+                            <td>
+                                Price
+                            </td>
+                            <td>
+                                Serving Prefs
+                            </td>
+                            <td>
+                                Buy Now
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-row">
+                        <tr>
+                            <td>
+                                <img src="./img/image_1.jpeg" >
+                            </td>
+                            <td>
+                                1001
+                            </td>
+                            <td>
+                                $7.99
+                            </td>
+                            <td>
+                                Hot
+                            </td>
+                            <td>
+                                <button class="buy-now">Coffee Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/image_2.jpeg" >
+                            </td>
+                            <td>
+                                1002
+                            </td>
+                            <td>
+                                $6.99
+                            </td>
+                            <td>
+                                Hot
+                            </td>
+                            <td>
+                                <button class="buy-now">Coffee Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/image_3.jpeg" >
+                            </td>
+                            <td>
+                                1003
+                            </td>
+                            <td>
+                                $5.99
+                            </td>
+                            <td>
+                                Cold
+                            </td>
+                            <td>
+                                <button class="buy-now">Coffee Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/image_4.jpeg" >
+                            </td>
+                            <td>
+                                1004
+                            </td>
+                            <td>
+                                $4.99
+                            </td>
+                            <td>
+                                Cold
+                            </td>
+                            <td>
+                                <button class="buy-now">Coffee Details</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./img/image_5.jpeg" >
+                            </td>
+                            <td>
+                                1005
+                            </td>
+                            <td>
+                                $2.99
+                            </td>
+                            <td>
+                                Cold
+                            </td>
+                            <td>
+                                <button class="buy-now">Coffee Details</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="r3">
+            For educational purpose only! No orders shall be fulfilled
+        </div>
+    </body>
+</html>

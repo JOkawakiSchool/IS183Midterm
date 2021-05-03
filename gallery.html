@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>JeffOkawaki - IS183Midterm</title>
+        <title>Assignment 4</title>
         <style>
             * {
                 margin: 0px;
@@ -12,7 +12,7 @@
                 width: 100vw;
                 height: 100vh;
             }
-            h2, h1 {
+            h2 {
                 font-size: 18px;
                 font-weight: bold;
             }
@@ -24,38 +24,35 @@
             }
             .r1, .r3 {
                 display: grid;
-                background-color: #9BC1BC;
+                background-color: #CCC;
                 padding: 1em;
                 align-items: center;
             }
             .r2 {
                 height: 100%;
-                /* background-color: #9BC1BC; */
+                background-color: #f1f1f1;
             }
             .r3 {
                 text-align: center;
                 align-items: center;
-                color: #F4F1BB;
             }
             .three-column {
                 display: grid;
                 grid-template-columns: 2fr 8fr 3fr;
-                /* background-color: #F4F1BB; */
+                background-color: #fff;
                 grid-column-gap: 1em;
             }
             .c1, .c3 {
-                background-color: #9BC1BC;
+                background-color: #ccc;
             }
             .c1 {
                 min-width: 200px;
             }
-            /* .c1:link, .c1:visited, .c1:active {
-                color: #F4F1BB;
-            } */
             .c2 {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                /* grid-template-rows: 1fr 1fr 1fr; */
+                grid-gap: 1em;
+                grid-template-columns: repeat(4, 1fr);
+                /* grid-template-rows: auto 1fr ; */
                 grid-auto-rows: min-content;
             }
             .c2 > img {
@@ -69,7 +66,7 @@
             .txt-center {
                 text-align: center;
                 margin: 15px auto 0px;
-                border-bottom: 1px solid #E6EBE0;
+                border-bottom: 1px solid #a8a7a7;
                 padding-bottom: 15px;
             }
             .left-nav {
@@ -78,33 +75,35 @@
             .left-nav > li > a {
                 display: block;
                 padding: 15px 0px 15px 30px;
-                background-color: #9BC1BC;
+                background-color: #ccc;
                 font-weight: bold;
                 text-decoration: none;
                 transition-duration: 0.7s;
-                color: #F4F1BB;
             }
             .left-nav > li > a:hover {
-                background-color: #9BC1BC;
+                background-color: #8c8c8c;
             }
             .h2-content {
-                grid-column: 1 / 5;
-                /* height: 22px; */
-                width: 100%;
-                background-color: #9BC1BC;
-            }
-            .hp-content {
-                display: grid;
                 grid-column: 1 / 5;
                 height: 22px;
                 width: 100%;
                 background-color: #f1f1f1;
             }
+            .c2-first-row {
+                grid-column: 1 / 5;
+            }
+            .grid-button {
+                padding: 6px 12px;
+                background-color: #ccc;
+                float: right;
+                display: block;
+                margin-bottom: 15px;
+            }
         </style>
     </head>
     <body class="main-container-grid">
         <div class="r1">
-            <h2><img src="./img/sm_logo.jpg"></h2>
+            <h2>Jeff Okawaki</h2>
         </div>
         <div class="r2 three-column">
             <div class="c1">
@@ -113,34 +112,34 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./contact-us.html">Contact</a></li>
-                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
                     <li><a href="./login.html">Login</a></li>
                </ul>
             </div>
-            <div>
-                <!-- <h2 class="txt-center h2-content">Recent product</h2> -->
-                <h1 class="hp-content">Gourmet Mascots</h1>
-                    <p class="hp-content">Here at Gormet coffee and Tea we have many rescued huskies to keep guest company while they enjoy our beverages!</p>
-                    <p class="hp-content">Their names are Elise, Tobi, Maxie, Summer, James, and Eris!</p>
-                    <p class="hp-content">If a husky spills your drink, please let the cashier know so they can clean up the mess and replace your drink, free of charge!</p>
-                    <p class="hp-content">Despite being rescues, we love our huskies and take pride in their docile nature, and have zero incidents of violence preformed by our huskies!</p>
-                    <p class="hp-content">However we here are Gourmet Coffee and Tea ask you please respect our animals and not antagonize them!</p>
-                <div class="c2">
-                    <img src="./img/1.jpg">
-                    <img src="./img/2.png">
-                    <img src="./img/3.jpg">
-                    <img src="./img/4.jpg">
-                    <img src="./img/5.jpeg">
-                    <img src="./img/6.jpg">
+            <div class="c2">
+                <div class="c2-first-row">
+                    <a href="./gallery-table.html" class ="grid-button">Grid View</a>
+                    <h2 class="txt-center g2-content">Gallery</h2>
                 </div>
-                
+                <img src="./img/1.jpg">
+                <img src="./img/2.png">
+                <img src="./img/3.jpg">
+                <img src="./img/4.jpg">
+                <img src="./img/5.jpeg">
+                <img src="./img/6.jpg">
+                <img src="./img/7.jpg">
+                <img src="./img/8.jpg">
+                <img src="./img/9.jpg">
+                <img src="./img/10.jpg">
+                <img src="./img/11.jpg">
+                <img src="./img/12.jpg">
             </div>
             <div class="c3">
                 <h2 class="txt-center">Recent product</h2>
             </div>
         </div>
         <div class="r3">
-            For educational purpose only! No orders shall be fulfilled
+            Copyright 2021 - Created by Jeff Okawaki
         </div>
     </body>
 </html>
